@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A84E27301373CE7C0098738B /* RSSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A84E272E1373CE7C0098738B /* RSSTableViewController.m */; };
+		A84E27311373CE7C0098738B /* RSSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A84E272E1373CE7C0098738B /* RSSTableViewController.m */; };
+		A84E27321373CE7C0098738B /* RSSTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A84E272F1373CE7C0098738B /* RSSTableViewController.xib */; };
+		A84E27331373CE7C0098738B /* RSSTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A84E272F1373CE7C0098738B /* RSSTableViewController.xib */; };
 		B50C1823121C26DB0055FCAB /* ClientCertificateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B50C1822121C26DB0055FCAB /* ClientCertificateTests.m */; };
 		B50C182C121C26FA0055FCAB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B50C182B121C26FA0055FCAB /* Security.framework */; };
 		B50C1848121C27510055FCAB /* client.p12 in Resources */ = {isa = PBXBuildFile; fileRef = B50C1847121C27510055FCAB /* client.p12 */; };
@@ -143,6 +147,9 @@
 
 /* Begin PBXFileReference section */
 		1D6058910D05DD3D006BFB54 /* ASIHTTPRequest iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ASIHTTPRequest iPhone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A84E272D1373CE7C0098738B /* RSSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSTableViewController.h; sourceTree = "<group>"; };
+		A84E272E1373CE7C0098738B /* RSSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSTableViewController.m; sourceTree = "<group>"; };
+		A84E272F1373CE7C0098738B /* RSSTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RSSTableViewController.xib; sourceTree = "<group>"; };
 		B50C1821121C26DB0055FCAB /* ClientCertificateTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientCertificateTests.h; sourceTree = "<group>"; };
 		B50C1822121C26DB0055FCAB /* ClientCertificateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientCertificateTests.m; sourceTree = "<group>"; };
 		B50C182B121C26FA0055FCAB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -398,6 +405,9 @@
 				B55B60600F765A750064029C /* main.m */,
 				B5BF64EE12FDFC7100CBC324 /* GHUnitIOSTestMain.m */,
 				B52329A911CA3380006C6E5A /* UI helpers */,
+				A84E272D1373CE7C0098738B /* RSSTableViewController.h */,
+				A84E272E1373CE7C0098738B /* RSSTableViewController.m */,
+				A84E272F1373CE7C0098738B /* RSSTableViewController.xib */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -645,6 +655,7 @@
 				B576D76611C7F4D90059B815 /* iPhoneMainWindow.xib in Resources */,
 				B523254311CA01F1006C6E5A /* Sample.xib in Resources */,
 				B50F661A1297FA45003887B1 /* strict.xcconfig in Resources */,
+				A84E27321373CE7C0098738B /* RSSTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -667,6 +678,7 @@
 				B523254211CA01F1006C6E5A /* Sample.xib in Resources */,
 				B52325AD11CA05A8006C6E5A /* info.png in Resources */,
 				B50F66191297FA45003887B1 /* strict.xcconfig in Resources */,
+				A84E27331373CE7C0098738B /* RSSTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -741,6 +753,7 @@
 				B57AF5921258B3F1002A1F0C /* WebPageViewController.m in Sources */,
 				B57AF5961258B401002A1F0C /* RequestProgressCell.m in Sources */,
 				B57D0F4912AA7D3600E5F992 /* ASIWebPageRequest.m in Sources */,
+				A84E27301373CE7C0098738B /* RSSTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -815,6 +828,7 @@
 				B57AF5931258B3F1002A1F0C /* WebPageViewController.m in Sources */,
 				B57AF5971258B401002A1F0C /* RequestProgressCell.m in Sources */,
 				B57D0F4812AA7D3600E5F992 /* ASIWebPageRequest.m in Sources */,
+				A84E27311373CE7C0098738B /* RSSTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -969,12 +983,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Forrest  Shi (MM7U893644)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Forrest  Shi (MM7U893644)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
+				PROVISIONING_PROFILE = "2C0D3BFC-6547-4FB3-B272-EDA274F3FF83";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2C0D3BFC-6547-4FB3-B272-EDA274F3FF83";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -983,11 +1000,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Forrest  Shi (MM7U893644)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Forrest  Shi (MM7U893644)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
+				PROVISIONING_PROFILE = "2C0D3BFC-6547-4FB3-B272-EDA274F3FF83";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2C0D3BFC-6547-4FB3-B272-EDA274F3FF83";
 				SDKROOT = iphoneos;
 			};
 			name = Release;

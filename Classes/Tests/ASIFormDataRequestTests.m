@@ -17,6 +17,32 @@
 
 @implementation ASIFormDataRequestTests
 
+#pragma mark - Test web service API 
+
+#define UNIQUE_DEVICE_IDENTIFIER [[UIDevice currentDevice] uniqueIdentifier]
+//Test send data to EF service 
+- (void)testEF
+{
+	ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:[NSURL URLWithString:@"http://www.englishtown.com/mobile/MobileEnglish/UserAuth.ashx"]];
+
+	[request setPostValue:@"dcrump" forKey:@"username"];
+	[request setPostValue:@"4a5d580fed9083bf01c8b2f44d0acc95" forKey:@"password"];
+    [request setPostValue:@"4a5d580fed9083bf01c8b2f44d0acc95" forKey:@"lowercasepassword"];
+    [request setPostValue:UNIQUE_DEVICE_IDENTIFIER forKey:@"devicecode"];
+    [request setPostValue:@"WordStudy" forKey:@"appname"];
+    [request setPostValue:@"1.0.5" forKey:@"appversion"];
+    
+	[request setShouldStreamPostDataFromDisk:YES];
+	[request buildPostBody];
+	[request startSynchronous];
+	
+    NSLog(@"return : %@", [request responseString]);
+    
+	//BOOL success = ([[request responseString] isEqualToString:@"a_non_empty_string: hello\r\nzzz_empty_string: \r\nxxx_non_empty_string: there"]);
+	//GHAssertTrue(success,@"Failed to send the correct post data");		
+	
+}
+
 - (void)testPostWithFileUpload
 {
 	NSURL *url = [NSURL URLWithString:@"http://allseeing-i.com/ASIHTTPRequest/tests/post"];

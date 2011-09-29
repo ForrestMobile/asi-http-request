@@ -56,7 +56,11 @@
 
 - (void)testBasicDownload
 {
-	NSURL *url = [NSURL URLWithString:@"http://allseeing-i.com"];
+    NSString *html5VideoDemo = @"http://www.robwalshonline.com/demos/html5_video_demo/html5_video.html";
+    
+	//NSURL *url = [NSURL URLWithString:@"http://allseeing-i.com"];
+    NSURL *url = [NSURL URLWithString:html5VideoDemo];
+    
 	ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
 	[request startSynchronous];
 	NSString *html = [request responseString];

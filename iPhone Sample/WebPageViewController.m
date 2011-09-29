@@ -23,7 +23,12 @@
 
 - (void)fetchWebPage:(id)sender
 {
-	[self fetchURL:[NSURL URLWithString:[urlField text]]];
+    //fshi for testing playback video 
+//	[self fetchURL:[NSURL URLWithString:[urlField text]]];
+    //Test 1 
+//	[self fetchURL:[NSURL URLWithString:@"http://www.robwalshonline.com/demos/html5_video_demo/html5_video.html"]];
+    //Test 2
+    [self fetchURL:[NSURL URLWithString:@"http://10.17.253.32/"]];
 }
 
 - (void)clearCache:(id)sender
